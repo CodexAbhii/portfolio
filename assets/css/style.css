@@ -164,11 +164,31 @@ nav{
     box-shadow: 0 2px 6px #00000081;
     z-index: 99999;
     height: 70px;
+    
+    .theme-btn {
+  padding: 4px;
+  width: 48px;
+  background: var(--bg-secondary);
+  border-radius: 100px;
+  transition: var(--transition-1);
+}
 
-    .theme-btn.active .icon {
+.header.active .theme-btn { background: var(--bg-primary); }
+
+.theme-btn .icon {
+  position: relative;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  box-shadow: inset 9px -6px var(--color-primary);
+  transition: var(--transition-1);
+}
+
+.theme-btn.active .icon {
   left: 20px;
   box-shadow: inset 20px -20px var(--sizzling-sunrise);
-    }
+}
 
 
     /* From https://css.glass */
