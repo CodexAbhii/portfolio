@@ -58,7 +58,7 @@ a{
 ul{
     list-style: none;
 }
-*-----------------------------------*\
+/*-----------------------------------*\
  * #THEME COLORS
 \*-----------------------------------*/
 
@@ -164,6 +164,11 @@ nav{
     box-shadow: 0 2px 6px #00000081;
     z-index: 99999;
     height: 70px;
+
+    .theme-btn.active .icon {
+  left: 20px;
+  box-shadow: inset 20px -20px var(--sizzling-sunrise);
+    }
 
 
     /* From https://css.glass */
